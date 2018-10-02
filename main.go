@@ -13,6 +13,13 @@ type cryptoCoin struct {
 func calculateRemainingTokens(tokens int, totalTokens int) int {
 	return totalTokens - tokens
 }
+func calculatePercentageRemain(tokens int, totalTokens int) int {
+	bal := 0
+	if totalTokens != 0 {
+		bal = (tokens / totalTokens) * 100
+	}
+	return bal
+}
 
 func main() {
 	// Create Fake Coin
