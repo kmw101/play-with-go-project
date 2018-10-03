@@ -1,7 +1,11 @@
 // Main Go program
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"../play-with-go-project/coinpack"
+)
 
 // Create a simple token definition
 type cryptoCoin struct {
@@ -37,4 +41,7 @@ func main() {
 	fmt.Println(securityToken.coinName, " ", bal)
 	bal = calculateRemainingTokens(5000, fakeCoin.numberOfCoins)
 	fmt.Println(fakeCoin.coinName, " ", bal)
+	cnumbers := [10]int{10, 11, 13, 19, 20, 5, 7, 19, 30, 9}
+	numres := coinpack.CalculateAverage(cnumbers)
+	fmt.Println(numres)
 }
