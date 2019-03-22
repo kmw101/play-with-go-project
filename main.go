@@ -3,9 +3,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/kmw101/play-with-go-project/coinpack"
 	"strconv"
-
-	"../play-with-go-project/coinpack"
 )
 
 // Create a simple token definition
@@ -21,7 +20,7 @@ func calculateRemainingTokens(tokens int, totalTokens int) int {
 func calculatePercentageRemain(tokens int, totalTokens int) int {
 	bal := 0
 	if totalTokens != 0 {
-		bal = (tokens / totalTokens) * 100
+		bal = (tokens / totalTokens) * 200
 	}
 	fmt.Print(bal)
 	return bal

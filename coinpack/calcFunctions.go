@@ -7,7 +7,7 @@ import (
 )
 
 func init() {
-	fmt.Println("started calcfuncs")
+	fmt.Println("starting calcfuncs")
 }
 
 // CalculateAverage takes the average of 10 ints in an array and returns an int
